@@ -1,0 +1,97 @@
+topics needs to practice
+1.subarray
+2.subarray with prefix
+3. dp
+4.graph
+5.segment tress
+6.string pattern based
+7.sparse array
+8.Arthimetic moduls
+9.Hash function
+
+class TreeAncestor {
+    int parentArr[];
+    public TreeAncestor(int n, int[] parent) {
+        
+        parentArr = new int[n];
+        parentArr = parent.clone();
+    }
+    
+    public int getKthAncestor(int node, int k) {
+        if(node>=parentArr.length){
+           return -1; 
+        }
+        while(k>0){
+            if(node==-1 || node==0){
+                return -1;
+            }else{
+             node=parentArr[node];   
+            }
+            k--;
+        }
+        return node;
+    }
+}
+
+/**
+ * Your TreeAncestor object will be instantiated and called as such:
+ * TreeAncestor obj = new TreeAncestor(n, parent);
+ * int param_1 = obj.getKthAncestor(node,k);
+ */
+
+
+class Solution {
+    HashMap<String,Integer> ob1 = new HashMap<>();
+    public String[] getFolderNames(String[] names) {
+        String res [] = new String[names.length];
+        for(int i=0;i<names.length;i++){
+            if(ob1.containsKey(names[i])){
+                int count = ob1.get(names[i])+1;
+                String temp = names[i]+"("+count+")";
+                if(ob1.containsKey(temp)){
+                   count = count+1;    
+                }
+                ob1.put(names[i],count);
+                res[i] = names[i]+"("+count + ")";
+                
+            }else{
+                res[i]=names[i];
+                 ob1.put(names[i],0);
+            }
+        }
+        return res;
+    }
+}
+
+
+class Solution {
+    public int[] topKFrequent(int[] nums, int k) {
+       int res[] = new int[k]; 
+       HashMap<Integer,Integer> hs = new HashMap<Integer,Integer>();
+        for(int i=0;i<nums.length;i++){
+            if(hs.containsKey(nums[i])){
+                hs.put(nums[i],hs.get(nums[i]));
+            }else{
+                hs.put(nums[i],0);
+            }
+        }
+        return res;
+        
+    }
+}
+
+bloom filter -- (https://www.youtube.com/watch?v=Bay3X9PAX5k)
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+gaurav sen watch video (low level design) (log client)
+
+1.https://www.youtube.com/watch?v=FKA2KgkkcqY  par1
+
+2.https://www.youtube.com/watch?v=bPkXQszkkpY  --par2
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+1.donne Marting --github
+2.pramp --- system design
+http://blog.gainlo.co/index.php/category/system-design-interview-questions/
+https://www.geeksforgeeks.org/minimum-salary-hike-for-each-employee-such-that-no-employee-feels-unfair/
