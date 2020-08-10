@@ -223,6 +223,7 @@ https://leetcode.com/problems/count-different-palindromic-subsequences/
 
 
 
+
 Given an array of Integers, find and replace next smaller element of each element in the given array in O(n).
 Approach : Use Stack.
 Steps :
@@ -281,6 +282,18 @@ https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-s
 https://leetcode.com/problems/maximum-length-of-repeated-subarray/
 https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/
 https://leetcode.com/problems/split-array-into-fibonacci-sequence/
+https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/
+https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+https://leetcode.com/discuss/general-discussion/726900/Google-Interview-questions-list-or-Jan-2020-Jun-2020
+https://leetcode.com/problems/largest-plus-sign/
+https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
+https://leetcode.com/problems/strobogrammatic-number-ii/
+https://leetcode.com/problems/smallest-common-region/
+https://leetcode.com/problems/best-meeting-point/
+https://leetcode.com/problems/word-abbreviation/
+https://leetcode.com/problems/matrix-cells-in-distance-order/
+
 
 
 
