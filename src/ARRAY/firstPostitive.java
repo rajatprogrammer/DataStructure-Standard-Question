@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 //https://leetcode.com/problems/first-missing-positive/
+//https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array-set-2/?ref=rp
 //Given an unsorted integer array, find the smallest missing positive integer.
 //in:[1,2,0] ,out:2
 //in:[3,4,-1,1],out 2
@@ -14,6 +15,8 @@ import java.util.Set;
 //https://leetcode.com/problems/minimum-cost-for-tickets/
 //https://leetcode.com/discuss/interview-question/778035/dynamic-programming-patterns
 //https://leetcode.com/tag/segment-tree/
+//https://leetcode.com/problems/longest-consecutive-sequence/
+
 public class firstPostitive {
 
 	public static void main(String[] args) {
