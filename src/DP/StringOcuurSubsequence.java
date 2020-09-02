@@ -1,5 +1,6 @@
 package DP;
 //https://www.geeksforgeeks.org/find-number-times-string-occurs-given-string/
+//https://leetcode.com/problems/distinct-subsequences/
 public class StringOcuurSubsequence {
 
 	public static void main(String[] args) {
