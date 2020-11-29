@@ -1,5 +1,5 @@
 package MISC;
-
+//https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes-set-1-linear/?ref=rp
 /**
  * There are two sorted arrays nums1 and nums2 of size m and n respectively.
  * Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
@@ -61,7 +61,7 @@ public class MedianOfTwoSortedArrayOfDifferentLength {
 
     public static void main(String[] args) {
         int[] x = {1, 3, 8, 9, 15};
-        int[] y = {7, 11, 19, 21, 18, 25};
+        int[] y = {7, 11, 19, 21, 18};
 
         MedianOfTwoSortedArrayOfDifferentLength mm = new MedianOfTwoSortedArrayOfDifferentLength();
         System.out.println(mm.findMedianSortedArrays(x, y));

@@ -9,7 +9,7 @@ public class consecutive_number {
 	ArrayList<Integer> res = new ArrayList<Integer>();
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int N=2,K=1;
+		int N=3,K=7;
 		consecutive_number ob1 =new consecutive_number();
 		System.out.println(Arrays.toString(ob1.numsSameConsecDiff(N, K)));
 	}

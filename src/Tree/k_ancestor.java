@@ -1,6 +1,6 @@
 package Tree;
 //https://leetcode.com/problems/kth-ancestor-of-a-tree-node/
-
+//https://iq.opengenus.org/binary-lifting-k-th-ancestor-lowest-common-ancestor/
 public class k_ancestor {
 	int maxPow=0;
 	int[][] jump;
