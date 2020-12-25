@@ -5,9 +5,11 @@ public class House_robber {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		int arr[] = {6,7,1,3,8,2,4};
+		System.out.println(rob(arr));
+		
 	}
-	public int rob(int[] nums) {
+	public static int rob(int[] nums) {
         if (nums.length == 0) return 0;
         if (nums.length <= 2) return Math.max(nums[0], nums[nums.length - 1]);
         if (nums.length == 3) return Math.max(nums[0] + nums[2], nums[1]);
