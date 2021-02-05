@@ -25,13 +25,13 @@ public class max_heap {
 		heap[r]= temp;
 	}
 	public boolean  checkLeafNode(int pos) {
-//		if (pos >= (size / 2) && pos <= size) { 
-//            return true; 
-//        } 
-		if(pos<size && pos<=size/2) {
-			return false;
-		}
-        return true; 
+		if (pos >= (size / 2) && pos <= size) { 
+            return true; 
+        } 
+//		if(pos<size && pos<=size/2) {
+//			return false;
+//		}
+        return false; 
 	}
 	public void insert(int item) {
 		heap[++size] = item;
