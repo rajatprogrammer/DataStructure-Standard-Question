@@ -1,5 +1,6 @@
 package ARRAY;
 //https://leetcode.com/problems/maximum-product-subarray/
+//amazon,google,microsoft
 public class productSubarray {
 
 	public static void main(String[] args) {

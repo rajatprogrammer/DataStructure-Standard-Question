@@ -5,6 +5,8 @@ import java.util.PriorityQueue;
 //https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
 public class maximumSubarray {
 //https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
+//https://www.geeksforgeeks.org/connect-n-ropes-minimum-cost/	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arr[] = {8, 5, 10, 7, 9, 4, 15, 12, 90, 13};

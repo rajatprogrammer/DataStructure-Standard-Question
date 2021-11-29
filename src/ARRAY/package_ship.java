@@ -1,5 +1,6 @@
 package ARRAY;
 //https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+//https://www.geeksforgeeks.org/find-two-rectangles-overlap/
 public class package_ship {
 
 	public static void main(String[] args) {

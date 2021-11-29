@@ -1,5 +1,5 @@
 package MISC;
-
+//https://www.geeksforgeeks.org/max-heap-in-java/
 public class max_heap {
 
 	int capacity;
@@ -58,7 +58,6 @@ public class max_heap {
         } 
     } 
 	private void maxHeapify(int pos) {
-		System.out.print( "dsdsd"+ heap[pos]);
 		// TODO Auto-generated method stub
 		if(checkLeafNode(pos))
 			return ;

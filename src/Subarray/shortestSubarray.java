@@ -4,6 +4,8 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 //https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/
+/*company:amazon,goldmansach
+ * */
 public class shortestSubarray {
 
 	public static void main(String[] args) {

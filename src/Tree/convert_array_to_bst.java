@@ -1,7 +1,21 @@
 package Tree;
 
+import Tree.subtree.TreeNode;
+
 public class convert_array_to_bst {
 
+	static class TreeNode {
+	    int val;
+	    TreeNode left;
+	    TreeNode right;
+	    TreeNode() {}
+	    TreeNode(int val) { this.val = val; }
+	    TreeNode(int val, TreeNode left, TreeNode right) {
+	        this.val = val;
+	        this.left = left;
+	        this.right = right;
+	    }
+	}
 	public static void main(String[] args) {
 			int arr[] = {-10,-3,0,5,9};
 			convert_array_to_bst ob1 =new convert_array_to_bst();

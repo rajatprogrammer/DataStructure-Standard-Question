@@ -6,8 +6,22 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.TreeMap;
 
+import Tree.subtree.TreeNode;
+
 //https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
 public class verticalOrderTraversalModified {
+	static class TreeNode {
+	    int val;
+	    TreeNode left;
+	    TreeNode right;
+	    TreeNode() {}
+	    TreeNode(int val) { this.val = val; }
+	    TreeNode(int val, TreeNode left, TreeNode right) {
+	        this.val = val;
+	        this.left = left;
+	        this.right = right;
+	    }
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

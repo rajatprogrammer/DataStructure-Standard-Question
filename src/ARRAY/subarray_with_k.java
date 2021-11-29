@@ -9,7 +9,7 @@ public class subarray_with_k {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arr[] = {1,2,1,2,3};
-		int K=2;
+		int K=3;
 		int total = subarraysWithKDistinct(arr,K) - subarraysWithKDistinct(arr,K-1);
 		System.out.print(total);
 	}

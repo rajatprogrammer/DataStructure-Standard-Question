@@ -1,7 +1,12 @@
 package ARRAY;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 //https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/
+//microsoft ,apple
 public class minDeletions {
 
 	public static void main(String[] args) {
@@ -11,23 +16,22 @@ public class minDeletions {
 
 	}
 	public int minDeletions(String s) {
-        int[] freq = new int[26];
-        for (char c : s.toCharArray()) {
-            freq[c - 'a']++;
+        if(s.length() == 0) return 0;
+        Map<Character,Integer> map = new HashMap<>();
+        for(int i=0;i<s.length();i++){
+            char ch = s.charAt(i);
+            map.put(ch,map.getOrDefault(ch,0)+1);
         }
-		Arrays.sort(freq);
-        int exp = freq[25];
-        int res = 0;
-        for (int i = 25; i >= 0; i--) {
-            if (freq[i] == 0) continue;
-            if (freq[i] > exp) {
-                res += freq[i] - exp;
-            } else {
-                exp = freq[i];
+        int result = 0;
+        Set<Integer> set = new HashSet<>();
+        for(int x: map.values()){
+            while(x> 0 && set.contains(x)){
+                x--;
+                result++;
             }
-            if (exp > 0) exp--; // Lowest exp is zero, cannot be negative
+            set.add(x);
         }
-        return res;
+        return result;
     }
 
 }

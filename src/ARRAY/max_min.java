@@ -8,7 +8,7 @@ public class max_min {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int arr[] = {1, 2, 3, 4, 9, 10, 13};
+		int arr[] = {1, 2, 3, 4, 9, 10, 78,90};
 		System.out.print(Arrays.toString(max_minFunc(arr)));
 	}
 	public static int[] max_minFunc(int arr[]) {

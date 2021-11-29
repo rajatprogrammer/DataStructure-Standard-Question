@@ -7,20 +7,21 @@ public class max_continuous_array {
 		int arr[] = {-2, -3, 4, -1, -2, 1, 5, -3};
 		System.out.print(maxSubArraySum(arr));
 	}
-	static int maxSubArraySum(int a[]) 
+	static int maxSubArraySum(int nums[]) 
 	{ 
-		int size = a.length; 
-		int max_so_far = Integer.MIN_VALUE, max_ending_here = 0; 
-
-		for (int i = 0; i < size; i++) 
-		{ 
-			max_ending_here = max_ending_here + a[i]; 
-			if (max_so_far < max_ending_here) 
-				max_so_far = max_ending_here; 
-			if (max_ending_here < 0) 
-				max_ending_here = 0; 
-		} 
-		return max_so_far; 
+		   // Initialize our variables using the first element.
+        int currentSubarray = nums[0];
+        int maxSubarray = nums[0];
+        
+        // Start with the 2nd element since we already used the first one.
+        for (int i = 1; i < nums.length; i++) {
+            int num = nums[i];
+            // If current_subarray is negative, throw it away. Otherwise, keep adding to it.
+            currentSubarray = Math.max(num, currentSubarray + num);
+            maxSubarray = Math.max(maxSubarray, currentSubarray);
+        }
+        
+        return maxSubarray;
 	} 
 
 }
